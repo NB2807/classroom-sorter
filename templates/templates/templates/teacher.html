@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Teacher Portal</title></head>
+<body>
+  <h2>🧑‍🏫 Teacher Dashboard</h2>
+  {% if success %}<p style="color:green;">Classes have been sorted and saved.</p>{% endif %}
+  <form method="POST">
+    <button type="submit">Sort Students into Classes</button>
+  </form>
+  <a href="/view_students">View All Students</a> |
+  <a href="/view_classes">View Sorted Classes</a>
+</body>
+</html>
