@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Student Portal</title></head>
+<body>
+  <h2>🎓 Student Questionnaire</h2>
+  {% if success %}<p style="color:green;">Thank you! Your answers have been saved.</p>{% endif %}
+  <form method="POST">
+    <label>Code Name:</label><br><input name="code_name" required><br>
+    <label>Last Year's Grade:</label><br><input name="grade_last_year" required><br>
+    <label>Who do you work well with?</label><br><input name="works_well_with"><br>
+    <label>Preferred Teacher Personality:</label><br><input name="teacher_personality"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
