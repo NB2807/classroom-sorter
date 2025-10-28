@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sorted Classes</title></head>
+<body>
+  <h2>🏫 Sorted Classes</h2>
+  {% for grade, class_list in classes.items() %}
+    <h3>{{ grade }}</h3>
+    {% for c in class_list %}
+      <h4>{{ c.class_name }}</h4>
+      <ul>
+        {% for s in c.students %}
+          <li>{{ s.code_name }} ({{ s.grade_last_year }})</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endfor %}
+</body>
+</html>
