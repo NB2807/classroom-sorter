@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><title>All Students</title></head>
+<body>
+  <h2>🧾 Student Responses</h2>
+  {% for s in data %}
+    <p><b>{{ s.code_name }}</b> – Grade: {{ s.grade_last_year }} – Works well with: {{ s.works_well_with }} – Teacher: {{ s.teacher_personality }}</p>
+  {% endfor %}
+</body>
+</html>
